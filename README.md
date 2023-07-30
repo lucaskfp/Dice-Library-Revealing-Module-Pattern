@@ -1,1 +1,1 @@
-# IIFE-Wrapper
+# Dice Library
