@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dice-library.umd.cjs",
+  "module": "./dist/dice-library.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dice-library.js",
+      "require": "./dist/dice-library.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
