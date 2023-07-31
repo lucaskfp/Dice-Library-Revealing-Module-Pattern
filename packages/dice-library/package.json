@@ -1,0 +1,31 @@
+{
+  "name": "@lucaskfp/dice-library",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dice-library.umd.cjs",
+  "module": "./dist/dice-library.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/dice-library.js",
+      "require": "./dist/dice-library.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "^3.4.0"
+  }
+}
